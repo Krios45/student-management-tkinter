@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter.ttk import Combobox
-from datetime import date
 
 root = Tk()
 root.title("Student Management")
@@ -37,14 +36,20 @@ def add_window():
     
     Major = Combobox(add_window, values=["BSCE", "BJS", "ECE", "ESAS", "FTH", "MJM"], font="Arial 13", width=18, state="r")
     Major.place(x=200, y=220)
+    
+    Email = StringVar()
     email_entry = Entry(add_window, textvariable=Major, width=20, font="Arial 13").place(x=200, y=270)
     
     Address = StringVar()
     address_entry = Entry(add_window, textvariable=Address, width=20, font="Arial 13").place(x=200, y=320)
     
     def add_window2_and_close():
-        add_window.destroy()
-        add_window2()
+        if Name.get() == "" or Age.get() == "" or Gender.get() == "" or Id.get() == "" or Major.get() == "" or Email.get() == "" or Address.get() == "":
+            messagebox.showerror("Error", "Vui lòng điền đầy đủ thông tin!!")
+            return
+        else:
+            add_window.destroy()
+            add_window2()
 
     Button(add_window, text="Tiếp tục", font="Arial 13", width=10, height=2, command=add_window2_and_close).place(x=200, y=370)
 
