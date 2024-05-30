@@ -1,0 +1,33 @@
+[
+    {
+        "School": "",
+        "Point": ""
+    },
+    {
+        "Name": "kie",
+        "Age": "21",
+        "Gender": "Nam",
+        "Id": "1",
+        "Major": "ECE",
+        "Email": "1",
+        "Address": "1"
+    },
+    {
+        "School": "",
+        "Point": ""
+    },
+    {
+        "Name": "3",
+        "Age": "21",
+        "Gender": "Nam",
+        "Id": "1",
+        "Major": "BJS",
+        "Email": "1",
+        "Address": "1"
+    },
+    {
+        "GPA": "",
+        "Scholarship": "",
+        "Company": ""
+    }
+]
